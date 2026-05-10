@@ -53,15 +53,21 @@ A fórmula para atualizar cada peso é: $w_i^N = w_i^{ANT} + \eta \cdot e \cdot 
 Vamos aplicar isso para os três pesos:
 
 * **Atualizando o peso do Viés ($w_0$)**:
+  
   $$w_0^N = 0 + 0.2 \cdot (-1) \cdot (1)$$
+  
   $$w_0^N = 0 - 0.2 = -0.2$$
 
 * **Atualizando o peso da Nota ($w_1$)**:
+  
   $$w_1^N = 0 + 0.2 \cdot (-1) \cdot (0.2)$$
+  
   $$w_1^N = 0 - 0.04 = -0.04$$
 
 * **Atualizando o peso da Frequência ($w_2$)**:
+  
   $$w_2^N = 0 + 0.2 \cdot (-1) \cdot (0.3)$$
+  
   $$w_2^N = 0 - 0.06 = -0.06$$
 
 ---
