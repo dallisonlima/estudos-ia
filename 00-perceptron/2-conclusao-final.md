@@ -12,7 +12,3 @@ O Perceptron simples é um classificador linear. O objetivo de rodar todas essas
 * **O aprendizado é em cascata:** Nunca use os pesos do início da época para calcular todos os alunos de uma vez. O algoritmo atualiza a cada passo. O Aluno B obrigatoriamente usa os pesos resultantes do cálculo do Aluno A. O Aluno C usa os do B, e assim por diante.
 * **Cuidado com a condição de parada:** Uma época só é finalizada após passar pelo último item da base de dados (neste caso, o Aluno D). Jamais reinicie ou pule para a próxima época no meio da tabela só porque encontrou um erro.
 * **Organização estrutural:** Em vez de fazer as contas de forma corrida na folha, tente organizar os dados. Fazer uma tabela mental ou no rascunho com o peso atual, a ativação, a previsão e o novo peso ajuda muito a não se perder no meio de tantas variáveis.
-
----
-
-Garantir essa base matemática sólida agora é o melhor caminho para fechar o curso de Sistemas de Informação com tranquilidade e dominar os conceitos de Inteligência Artificial. Bons estudos e uma excelente prova!
