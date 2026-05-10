@@ -48,15 +48,21 @@ O erro foi **1**. Como houve erro na previsão, a rede precisa reajustar seus pe
 Aplicamos a fórmula de aprendizado ($w_i^N = w_i^{ANT} + \eta \cdot e \cdot x_i$) para cada um dos três pesos:
 
 * **Atualizando o peso do Viés ($w_0$)**:
+  
   $$w_0^N = -0.2 + 0.2 \cdot (1) \cdot (1)$$
+  
   $$w_0^N = -0.2 + 0.2 = 0$$
 
 * **Atualizando o peso da Nota ($w_1$)**:
+  
   $$w_1^N = -0.04 + 0.2 \cdot (1) \cdot (0.7)$$
+  
   $$w_1^N = -0.04 + 0.14 = 0.1$$
 
 * **Atualizando o peso da Frequência ($w_2$)**:
+  
   $$w_2^N = -0.06 + 0.2 \cdot (1) \cdot (0.6)$$
+  
   $$w_2^N = -0.06 + 0.12 = 0.06$$
 
 ---
