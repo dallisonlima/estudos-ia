@@ -12,7 +12,8 @@ Cada módulo contém o **enunciado** do problema, uma **explicação detalhada**
 estudos-ia/
 ├── 00-perceptron/          # Perceptron simples para classificação binária
 ├── 01-regressao-linear/    # Regressão Linear com gradiente descendente
-└── 02-matriz-confusao/     # Métricas de avaliação e Matriz de Confusão
+├── 02-matriz-confusao/     # Métricas de avaliação e Matriz de Confusão
+└── 03-redes-neurais/       # MLP com Backpropagation (resolução da Época 1)
 ```
 
 ---
@@ -64,6 +65,22 @@ O estudo analisa um classificador de **spam/não-spam** em um conjunto de teste 
 
 ---
 
+### [03 — Redes Neurais (MLP + Backpropagation)](./03-redes-neurais/)
+
+> Treinamento passo a passo de uma rede MLP com Retropropagação do Erro.
+
+O módulo cobre o treinamento de uma rede *Multilayer Perceptron* com **1 neurônio oculto (sigmoide)** e **1 neurônio de saída (linear)**, resolvendo a **Época 1** completa ponto a ponto. Os tópicos incluem:
+
+- **Forward Pass:** $Z_h \to h = \sigma(Z_h) \to \hat{y} = b_o + \mu \cdot h$
+- **Cálculo do erro:** $E = y - \hat{y}$
+- **Backpropagation da camada de saída:** atualização de $\mu$ e $b_o$
+- **Backpropagation da camada oculta:** cálculo do delta $\delta_h = E \cdot \mu \cdot h(1-h)$ e atualização de $V_1$, $V_2$, $b_h$
+- Evolução dos pesos ao longo dos 3 pontos da Época 1
+
+**Taxa de aprendizagem:** $\eta = 0.1$ | **Topologia:** 2 entradas → 1 oculto → 1 saída
+
+---
+
 ## 🛠️ Como usar este repositório
 
 Os arquivos são escritos em **Markdown** com notação matemática LaTeX. Para melhor visualização, recomenda-se:
@@ -80,6 +97,8 @@ Os arquivos são escritos em **Markdown** com notação matemática LaTeX. Para 
 - [x] Implementar Regressão Linear com atualização de pesos via gradiente
 - [x] Construir e interpretar a Matriz de Confusão
 - [x] Calcular e analisar métricas de avaliação de modelos (Acurácia, Precisão, Recall, F1)
+- [x] Compreender a arquitetura MLP e a diferença entre modelos lineares e não-lineares
+- [x] Executar o algoritmo Backpropagation manualmente (Forward Pass + atualização de pesos em duas camadas)
 
 ---
 
