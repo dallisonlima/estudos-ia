@@ -31,7 +31,9 @@ Os pesos e vieses (bias) da rede foram inicializados com os seguintes valores:
 ## 3) Fórmulas da Rede (Forward Pass)
 
 **Cálculo do Neurônio Oculto:**
+
 $$Z_h = b_h + V_1 X_1 + V_2 X_2$$
+
 $$h = \frac{1}{1 + e^{-Z_h}} \quad \text{(Função Sigmoide)}$$
 
 **Cálculo do Neurônio de Saída (Previsão):**
@@ -45,14 +47,20 @@ $$E = y - \hat{y}$$
 Onde a letra $N$ no subscrito indica o valor "Novo".
 
 **Atualização da Camada de Saída:**
+
 $$b_{o,N} = b_o + \eta \cdot E$$
+
 $$\mu_N = \mu + \eta \cdot E \cdot h$$
 
 **Atualização da Camada Oculta:**
 Para atualizar a camada oculta, precisamos calcular o delta ($\delta_h$), que representa o quanto o neurônio oculto foi "culpado" pelo erro final. A fórmula já inclui a derivada da função sigmoide:
+
 $$\delta_h = E \cdot \mu \cdot h(1 - h)$$
 
 Com o delta calculado, atualizamos os pesos iniciais:
+
 $$b_{h,N} = b_h + \eta \cdot \delta_h$$
+
 $$V_{1,N} = V_1 + \eta \cdot \delta_h \cdot X_1$$
+
 $$V_{2,N} = V_2 + \eta \cdot \delta_h \cdot X_2$$
