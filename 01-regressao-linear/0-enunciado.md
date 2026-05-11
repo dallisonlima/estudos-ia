@@ -43,7 +43,8 @@ $$\hat{y} = b + W_1X_1 + W_2X_2 + W_3X_3$$
 
 $$E = y - \hat{y}$$
 
-**Atualização dos Parâmetros** *(onde $n$ = novo e $a$ = atual)*:
+**Atualização dos Parâmetros** 
+(onde $n$ = novo e $a$ = atual):
 
 
 $$b_n = b_a + \eta \cdot E$$
