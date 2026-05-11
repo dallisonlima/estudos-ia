@@ -33,6 +33,7 @@ $$\hat{y} = b + W_1X_1 + W_2X_2 + W_3X_3$$
 
 **Cálculo:**
 $$\hat{y} = 0 + (0 \cdot 1) + (0 \cdot 0) + (0 \cdot 2)$$
+
 $$\hat{y} = 0$$
 
 > **💡 O que aprendemos:** A previsão inicial de um modelo "zerado" é sempre zero. Ele previu que o aluno tiraria nota 0.
