@@ -48,7 +48,9 @@ $$\hat{y} = 0$$
 $$E = y - \hat{y}$$
 
 **Cálculo:**
+
 $$E = 9 - 0$$
+
 $$E = 9$$
 
 > **💡 O que aprendemos:** O modelo errou por 9 pontos. Como o erro é **positivo**, significa que ele previu para baixo (subestimou a nota). O algoritmo saberá que precisa empurrar os pesos para cima no próximo passo.
