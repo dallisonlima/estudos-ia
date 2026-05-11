@@ -32,6 +32,7 @@ Antes de fazer qualquer conta, precisamos separar os dados do aluno atual e o "c
 $$\hat{y} = b + W_1X_1 + W_2X_2 + W_3X_3$$
 
 **Cálculo:**
+
 $$\hat{y} = 0 + (0 \cdot 1) + (0 \cdot 0) + (0 \cdot 2)$$
 
 $$\hat{y} = 0$$
@@ -58,25 +59,39 @@ $$E = 9$$
 **O que estamos fazendo:** É aqui que o modelo realmente aprende. Vamos pegar o Erro ($9$) e usá-lo para alterar os pesos. Nós usamos a Taxa de Aprendizado ($\eta$) para o ajuste não ser brusco demais, e multiplicamos pela entrada ($X$) para dar mais "peso" à característica que estava mais presente no aluno.
 
 **1. Atualizando o Viés ($b$):** O viés não multiplica por $X$.
+
 $$b_{novo} = b_{atual} + \eta \cdot E$$
+
 $$b_{novo} = 0 + 0.01 \cdot 9$$
+
 $$b_{novo} = 0.09$$
 
 **2. Atualizando o Peso 1 ($W_1$ - Horas de estudo):**
+
 $$W_{1,novo} = W_{1,atual} + \eta \cdot E \cdot X_1$$
+
 $$W_{1,novo} = 0 + 0.01 \cdot 9 \cdot 1$$
+
 $$W_{1,novo} = 0.09$$
 
 **3. Atualizando o Peso 2 ($W_2$ - Listas resolvidas):**
+
 $$W_{2,novo} = W_{2,atual} + \eta \cdot E \cdot X_2$$
+
 $$W_{2,novo} = 0 + 0.01 \cdot 9 \cdot 0$$
+
 $$W_{2,novo} = 0$$
+
 > **💡 Dica de Fixação:** O peso 2 continuou zero. Por quê? Porque esse aluno não fez listas ($X_2 = 0$). Se a característica não estava presente, ela não influenciou na previsão incorreta, logo, seu peso não muda neste momento.
 
 **4. Atualizando o Peso 3 ($W_3$ - Participação):**
+
 $$W_{3,novo} = W_{3,atual} + \eta \cdot E \cdot X_3$$
+
 $$W_{3,novo} = 0 + 0.01 \cdot 9 \cdot 2$$
+
 $$W_{3,novo} = 0.18$$
+
 > **💡 Dica de Fixação:** Como a participação desse aluno era alta ($X_3 = 2$), essa característica recebeu o **dobro** de ajuste em relação ao tempo de estudo ($X_1 = 1$). A matemática pune/premia as variáveis proporcionalmente à presença delas.
 
 ---
