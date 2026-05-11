@@ -81,16 +81,6 @@ O módulo cobre o treinamento de uma rede *Multilayer Perceptron* com **1 neurô
 
 ---
 
-## 🛠️ Como usar este repositório
-
-Os arquivos são escritos em **Markdown** com notação matemática LaTeX. Para melhor visualização, recomenda-se:
-
-- **VS Code** com a extensão [Markdown Preview Enhanced](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced)
-- **Obsidian** (suporte nativo a LaTeX com MathJax)
-- Qualquer visualizador Markdown com suporte a MathJax/KaTeX
-
----
-
 ## 🎯 Objetivos de Aprendizagem
 
 - [x] Entender o funcionamento do Perceptron e a regra de aprendizagem
