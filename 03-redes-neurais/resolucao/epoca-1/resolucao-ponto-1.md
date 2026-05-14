@@ -112,7 +112,7 @@ $$V_{1,Novo} = 0.2 + (0.1 \cdot -0.00375 \cdot 0)$$
 
 $$V_{1,Novo} = 0.2$$
 
-*(Como $X_1$ era zero, a conexão não estava ativa, então o peso não muda).*
+(Como $X_1$ era zero, a conexão não estava ativa, então o peso não muda).
 
 **4. Atualizando o Peso $V_2$:**
 
