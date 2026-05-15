@@ -41,31 +41,48 @@ Com os valores da Matriz em mãos (`VP=6`, `VN=10`, `FP=2`, `FN=2`), vamos calcu
 
 ### 1. Acurácia
 Mede a taxa de acerto geral (em tudo).
+
 $$\text{Acurácia} = \frac{VP + VN}{VP + VN + FP + FN}$$
+
 $$\text{Acurácia} = \frac{6 + 10}{6 + 10 + 2 + 2}$$
+
 $$\text{Acurácia} = \frac{16}{20} = 0.80$$
+
 > **Resultado:** O modelo acertou **80%** de todas as previsões.
 
 ### 2. Precisão
 Mede a qualidade dos bloqueios. De tudo que ele jogou na lixeira, quanto era lixo mesmo?
+
 $$\text{Precisão} = \frac{VP}{VP + FP}$$
+
 $$\text{Precisão} = \frac{6}{6 + 2}$$
+
 $$\text{Precisão} = \frac{6}{8} = 0.75$$
+
 > **Resultado:** A precisão é de **75%**. Isso significa que a cada 4 e-mails que o modelo joga na lixeira, 1 é um e-mail de trabalho importante (Falso Positivo). 
 
 ### 3. Recall (Sensibilidade)
 Mede a capacidade de encontrar o alvo. De todos os Spams que existiam, quantos ele pegou?
+
 $$\text{Recall} = \frac{VP}{VP + FN}$$
+
 $$\text{Recall} = \frac{6}{6 + 2}$$
+
 $$\text{Recall} = \frac{6}{8} = 0.75$$
+
 > **Resultado:** O recall é de **75%**. Isso significa que de todos os Spams que chegam, o modelo deixa passar 25% deles para a caixa de entrada (Falso Negativo).
 
 ### 4. F1-Score
 Média harmônica entre Precisão e Recall.
+
 $$F1 = 2 \cdot \frac{\text{Precisão} \cdot \text{Recall}}{\text{Precisão} + \text{Recall}}$$
+
 $$F1 = 2 \cdot \frac{0.75 \cdot 0.75}{0.75 + 0.75}$$
+
 $$F1 = 2 \cdot \frac{0.5625}{1.50}$$
+
 $$F1 = 0.75$$
+
 > **Resultado:** O F1-Score do modelo é **75%**.
 
 ---
